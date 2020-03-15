@@ -1,0 +1,9 @@
+{
+  "customers": [
+    {
+      "id": 1,
+      "name": "Nicolas Alejandro Martinez Suria",
+      "purchases": 15
+    }
+  ]
+}
