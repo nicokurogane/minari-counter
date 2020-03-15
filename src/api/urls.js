@@ -1,3 +1,5 @@
-export const urls = {
-  customers: id => (!id ? `/customers` : `/customers/${id}`),
+const CUSTOMER_PATH = '/customers';
+
+export default {
+  customers: id => (!id ? CUSTOMER_PATH : `${CUSTOMER_PATH}/${id}`),
 };
