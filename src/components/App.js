@@ -1,5 +1,5 @@
-import React from "react";
-import UserInfo from "components/userInfo/UserInfo";
+import React from 'react';
+import UserInfo from 'components/userInfo/UserInfo';
 
 function App() {
   return (
