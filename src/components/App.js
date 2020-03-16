@@ -4,7 +4,7 @@ import urls from 'api/urls';
 import { getData } from 'api/minariClient';
 
 function App() {
-  let data;
+  let data = [];
 
   const getCustomers = async () => {
     data = await getData(urls.customers());
@@ -16,7 +16,9 @@ function App() {
 
   return (
     <div className="App">
-      <UserInfo user={{ id: 10, name: 'Nicolas', purchases: 0 }} />
+      {data.map(user => (
+        <UserInfo user={user} key={user.id} />
+      ))}
     </div>
   );
 }
